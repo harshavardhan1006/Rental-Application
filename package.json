@@ -1,0 +1,16 @@
+{
+  "name": "stayfinder-mern",
+  "version": "1.0.0",
+  "description": "Full-stack Airbnb-like MERN application",
+  "private": true,
+  "scripts": {
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm start\"",
+    "start:server": "cd server && npm start",
+    "start:client": "cd client && npm start",
+    "seed": "cd server && node seed.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}

@@ -1,0 +1,78 @@
+.detail-page { padding: 32px 24px 80px; max-width: 1100px; }
+.detail-header { display: flex; justify-content: space-between; align-items: flex-start; gap: 16px; margin-bottom: 20px; flex-wrap: wrap; }
+.detail-title { font-size: 28px; font-weight: 800; color: var(--dark); line-height: 1.2; }
+.detail-meta { display: flex; align-items: center; gap: 6px; margin-top: 8px; flex-wrap: wrap; }
+.meta-item { display: flex; align-items: center; gap: 4px; font-size: 14px; font-weight: 600; }
+.meta-separator { color: var(--gray); }
+.detail-actions { display: flex; gap: 8px; flex-shrink: 0; }
+
+/* Gallery */
+.gallery { display: grid; grid-template-columns: 1fr; gap: 8px; margin-bottom: 40px; border-radius: var(--radius); overflow: hidden; }
+.gallery-main img { width: 100%; height: 420px; object-fit: cover; }
+.gallery-thumbs { display: flex; gap: 8px; overflow-x: auto; }
+.gallery-thumbs::-webkit-scrollbar { height: 4px; }
+.thumb { flex-shrink: 0; width: 100px; height: 70px; border-radius: var(--radius-sm); overflow: hidden; border: 3px solid transparent; transition: var(--transition); }
+.thumb.active { border-color: var(--primary); }
+.thumb img { width: 100%; height: 100%; object-fit: cover; }
+
+/* Layout */
+.detail-layout { display: grid; grid-template-columns: 1fr 360px; gap: 48px; align-items: start; }
+.detail-info { min-width: 0; }
+.section-title { font-size: 20px; font-weight: 800; margin-bottom: 16px; }
+
+/* Quick facts */
+.quick-facts { display: flex; flex-wrap: wrap; gap: 10px; }
+.fact-chip { background: var(--gray-lighter); padding: 8px 14px; border-radius: 20px; font-size: 13px; font-weight: 600; }
+
+/* Host */
+.host-section { display: flex; gap: 16px; }
+.host-label { font-size: 12px; color: var(--gray); text-transform: uppercase; letter-spacing: 0.05em; }
+.host-name { font-size: 18px; font-weight: 800; margin-bottom: 4px; }
+.host-bio { font-size: 14px; color: var(--gray); margin-bottom: 4px; }
+.host-since { font-size: 12px; color: var(--gray); }
+
+/* Description */
+.detail-description { font-size: 15px; line-height: 1.8; color: var(--gray-dark); white-space: pre-wrap; }
+
+/* Amenities */
+.amenities-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+.amenity-item { display: flex; align-items: center; gap: 10px; font-size: 14px; }
+.amenity-icon { font-size: 20px; width: 28px; text-align: center; }
+
+/* Map */
+.map-embed { border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); }
+
+/* Reviews */
+.reviews-list { display: flex; flex-direction: column; gap: 24px; }
+.review-item { padding: 0; }
+.review-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.review-avatar { flex-shrink: 0; }
+.review-author { font-weight: 700; font-size: 14px; }
+.review-date { font-size: 12px; color: var(--gray); }
+.review-comment { font-size: 14px; line-height: 1.7; color: var(--gray-dark); }
+.stars { display: flex; gap: 2px; margin-left: auto; }
+.star { color: #FFB400; font-size: 13px; }
+.star.empty { color: var(--gray-light); }
+
+/* Booking widget */
+.booking-widget-wrap { position: sticky; top: 100px; }
+.booking-widget { background: white; border-radius: var(--radius); border: 1px solid var(--gray-light); padding: 28px; box-shadow: var(--shadow); }
+.booking-widget-price { display: flex; align-items: baseline; gap: 4px; }
+.price-amount { font-size: 28px; font-weight: 800; }
+.price-unit { font-size: 16px; color: var(--gray); }
+.booking-widget-rating { font-size: 14px; font-weight: 600; margin-top: 4px; }
+.booking-note { text-align: center; font-size: 12px; color: var(--gray); margin-top: 10px; }
+.owner-notice { display: flex; gap: 12px; align-items: center; font-size: 14px; background: var(--gray-lighter); padding: 16px; border-radius: var(--radius-sm); }
+.owner-notice span { font-size: 28px; }
+.owner-notice strong { display: block; margin-bottom: 2px; }
+.owner-notice p { color: var(--gray); margin: 0; }
+
+@media (max-width: 960px) {
+  .detail-layout { grid-template-columns: 1fr; }
+  .booking-widget-wrap { position: static; }
+  .gallery-main img { height: 280px; }
+}
+@media (max-width: 640px) {
+  .detail-title { font-size: 22px; }
+  .amenities-grid { grid-template-columns: 1fr; }
+}
