@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: process.env.REACT_APP_API_URL || '/api',
+  baseURL: "https://airbnb-mern-1-sh6k.onrender.com/",
   headers: { 'Content-Type': 'application/json' }
 });
 
