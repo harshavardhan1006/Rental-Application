@@ -1,24 +1,31 @@
-import axios from 'axios';
+import axios from "axios";
 
 const api = axios.create({
-  baseURL: "https://airbnb-mern-1-sh6k.onrender.com/",
-  headers: { 'Content-Type': 'application/json' }
+  baseURL: "https://airbnb-mern-1-sh6k.onrender.com/api",
+  headers: {
+    "Content-Type": "application/json",
+  },
 });
 
 // Attach token to every request
 api.interceptors.request.use((config) => {
-  const token = localStorage.getItem('token');
-  if (token) config.headers.Authorization = `Bearer ${token}`;
+  const token = localStorage.getItem("token");
+
+  if (token) {
+    config.headers.Authorization = `Bearer ${token}`;
+  }
+
   return config;
 });
 
 // Handle 401 globally
 api.interceptors.response.use(
-  (res) => res,
+  (response) => response,
   (error) => {
     if (error.response?.status === 401) {
-      localStorage.removeItem('token');
+      localStorage.removeItem("token");
     }
+
     return Promise.reject(error);
   }
 );
