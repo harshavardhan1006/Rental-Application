@@ -1,6 +1,7 @@
-# 🏠 StayFinder — Full-Stack MERN Airbnb Clone
+# 🏠 StayFinder — Rental System
 
 A full-featured Airbnb-like platform built with the **MERN stack** (MongoDB, Express.js, React.js, Node.js). This project demonstrates complete full-stack architecture including authentication, CRUD operations, booking logic, image uploads, search/filtering, reviews, and a user dashboard.
+
 ---
 ## 🏗️ Architecture Overview
 <img width="3238" height="596" alt="Rental System" src="https://github.com/user-attachments/assets/0f5e404e-fd5a-41d5-8116-8dcccc6ac759" />
