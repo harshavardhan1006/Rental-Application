@@ -1,4 +1,4 @@
-# 🏠 StayFinder — Rental System
+# 🏠 StayFinder — Rental Application
 
 A full-featured Airbnb-like platform built with the **MERN stack** (MongoDB, Express.js, React.js, Node.js). This project demonstrates complete full-stack architecture including authentication, CRUD operations, booking logic, image uploads, search/filtering, reviews, and a user dashboard.
 
