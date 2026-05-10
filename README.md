@@ -1,6 +1,6 @@
 # 🏠 StayFinder — Rental Application
 
-A full-stack Airbnb-style rental platform built using the **MERN stack**. It includes authentication, property listings, bookings, reviews, search/filtering, image uploads, and dashboard management.
+A full-stack rental platform built using the **MERN stack**. It includes authentication, property listings, bookings, reviews, search/filtering, image uploads, and dashboard management.
 
 ---
 ## System Architecture
